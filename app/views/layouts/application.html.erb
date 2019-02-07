@@ -16,6 +16,22 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">Mi Holding</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><%= link_to 'Home', root_path %></li>
+            <li><%= link_to 'New Company', new_company_path %> </li>
+            <li><%= link_to 'New Area', new_area_path %> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <%= yield %>
   </body>
 </html>
