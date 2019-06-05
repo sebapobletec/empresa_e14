@@ -1,6 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Companies</h1>
+<h1><strong>Companies</strong></h1>
+
+<div class="well">
+
 
 <table class="table table-bordered table-hover">
 
@@ -14,7 +17,7 @@
 
 <tr>
   <% @companies.each do |company| %>
-  <td><%= link_to company.name, company %></td>
+  <td><h4><%= link_to company.name, company %></h4></td>
   <td><%= company.employees.count %></td>
   <td><%= link_to 'Edit', edit_company_path(company),  class: "btn btn-primary btn-sm" %></td>
   <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' },  class: "btn btn-danger btn-sm" %></td>
@@ -23,3 +26,5 @@
 <% end %>
 
 </table>
+
+</div>
